@@ -1,0 +1,135 @@
+/* Here the comments are just previous elements which were replaced by new elements. */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu&display=swap');
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.new {
+    color: red;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background: white;
+    height: 66px;
+    box-shadow: rgb(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.rightBox {
+    display: flex;
+    margin: 12px;
+}
+
+.left img {
+    width: 53px;
+    height: 36px;
+}
+
+nav {
+    /* padding: 0 12px; */
+    padding-top: 14px;
+    font-size: 12px;
+}
+
+.container {
+    /* max-width: 80vw; */
+    padding: 0 10vh;
+    /* margin: auto; */
+    /* margin: 13px 0px; */
+}
+
+nav ul li {
+    list-style-type: none;
+    padding: 0 12px;
+}
+
+.section1 {
+    background-color: #f2f2f2;
+    /* height: 124vh; */
+}
+
+.search {
+    width: 34vw;
+    padding: 7px 17px;
+    background: #f7f8fd;
+    border-radius: 5px;
+}
+
+.homeImg {
+    width: 100%;
+    margin: 12px 0;
+    cursor: pointer;
+}
+
+.text-banner-title {
+    text-transform: uppercase;
+    color: #3e4152;
+    letter-spacing: .15em;
+    font-size: 1.8em;
+    margin: 50px 0 10px 30px;
+    max-height: 5em;
+    font-weight: 700;
+}
+
+.text-banner-subtitle {
+    margin-top: 0;
+    font-weight: 400;
+    line-height: 1em;
+    max-height: 3em;
+    color: #7e818c;
+    margin-bottom: 50px;
+}
+
+footer {
+    padding: 23px;
+    text-align: center;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+
+}
+/* .tall{
+    min-height: 40vh;
+  } */
+  
+  @media (max-width: 450px) { 
+  .search {
+      width: 72vw; 
+  }
+  }
+
+@media (max-width: 1080px) {
+    nav ul li {
+        list-style: none;
+        padding: 0 4px;
+        font-size: 10px;
+    }
+
+    .container {
+        padding: 0 2vw;
+    }
+
+    header {
+        /* background: red; */
+        height: 122px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .right {
+        flex-direction: column;
+    }
+
+    .rightBox {
+        display: flex;
+        margin: 12px;
+    }
+}
